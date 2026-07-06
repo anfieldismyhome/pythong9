@@ -517,4 +517,132 @@ HOME PAGE
     margin-bottom:12px;
 
 }
+/* ==========================================
+SIDEBAR V2
+========================================== */
 
+.course-progress{
+
+    margin-bottom:40px;
+
+}
+
+.progress-bar{
+
+    height:10px;
+
+    background:#E0E0E0;
+
+    border-radius:999px;
+
+    overflow:hidden;
+
+    margin:15px 0;
+
+}
+
+.progress-fill{
+
+    width:0%;
+
+    height:100%;
+
+    background:var(--primary);
+
+}
+
+.sidebar{
+
+    overflow-y:auto;
+
+    position:sticky;
+
+    top:78px;
+
+    height:calc(100vh - 78px);
+
+}
+
+.sidebar-section{
+
+    margin-bottom:35px;
+
+}
+
+.sidebar-section h3{
+
+    font-size:17px;
+
+    margin-bottom:12px;
+
+    color:var(--primary);
+
+}
+
+.sidebar-section a{
+
+    display:block;
+
+    padding:9px 0;
+
+    border-left:3px solid transparent;
+
+    padding-left:12px;
+
+    transition:.2s;
+
+}
+
+.sidebar-section a:hover{
+
+    border-left:3px solid var(--primary);
+
+    background:#F5F9FF;
+
+}
+
+/* ==========================================
+NAVBAR SEARCH
+========================================== */
+
+.topbar{
+
+    gap:40px;
+
+}
+
+nav{
+
+    flex:1;
+
+    justify-content:center;
+
+}
+
+.nav-right{
+
+    width:280px;
+
+}
+
+.nav-right input{
+
+    width:100%;
+
+    padding:10px 15px;
+
+    border:1px solid var(--border);
+
+    border-radius:999px;
+
+    outline:none;
+
+    font-size:15px;
+
+}
+
+.nav-right input:focus{
+
+    border-color:var(--primary);
+
+}
