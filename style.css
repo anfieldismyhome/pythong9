@@ -1,0 +1,350 @@
+/* ==========================================================
+   GRADE 9 PYTHON COURSE
+   Main Stylesheet
+========================================================== */
+
+/* ---------- RESET ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ---------- ROOT VARIABLES ---------- */
+
+:root{
+
+    --primary:#4285F4;
+    --primary-dark:#2F6FDB;
+
+    --accent:#FFAB40;
+    --teal:#0097A7;
+
+    --bg:#F7F9FC;
+    --surface:#FFFFFF;
+
+    --text:#212121;
+    --text-light:#616161;
+
+    --border:#E5E7EB;
+
+    --success:#43A047;
+    --warning:#FB8C00;
+    --danger:#E53935;
+
+    --radius:14px;
+
+    --shadow:
+        0 8px 30px rgba(0,0,0,.06);
+
+}
+
+/* ---------- BODY ---------- */
+
+body{
+
+    font-family:"Inter",sans-serif;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    line-height:1.6;
+
+}
+
+/* ---------- LINKS ---------- */
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+}
+
+/* ---------- HEADINGS ---------- */
+
+h1,h2,h3,h4,h5{
+
+    font-family:"Poppins",sans-serif;
+
+    font-weight:600;
+
+    color:var(--text);
+
+}
+
+/* ---------- CODE ---------- */
+
+code,
+pre{
+
+    font-family:"JetBrains Mono",monospace;
+
+}
+
+/* ---------- IMAGES ---------- */
+
+img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+/* ---------- BUTTON ---------- */
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:12px 24px;
+
+    background:var(--primary);
+
+    color:white;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.btn:hover{
+
+    background:var(--primary-dark);
+
+}
+
+/* ---------- CARD ---------- */
+
+.card{
+
+    background:var(--surface);
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+    padding:24px;
+
+}
+
+/* ---------- CONTAINER ---------- */
+
+.container{
+
+    width:min(1400px,95%);
+
+    margin:auto;
+
+/* ==========================================================
+LAYOUT
+========================================================== */
+
+.topbar{
+
+    height:78px;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 40px;
+
+    border-bottom:1px solid var(--border);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.logo-icon{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:12px;
+
+    background:var(--primary);
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-weight:bold;
+
+    font-size:20px;
+
+}
+
+.logo-text span{
+
+    color:var(--text-light);
+
+    font-size:14px;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+nav a{
+
+    font-weight:600;
+
+    transition:.2s;
+
+}
+
+nav a:hover{
+
+    color:var(--primary);
+
+}
+
+.page-layout{
+
+    display:grid;
+
+    grid-template-columns:270px 1fr;
+
+    min-height:calc(100vh - 78px);
+
+}
+
+.sidebar{
+
+    background:white;
+
+    border-right:1px solid var(--border);
+
+    padding:30px;
+
+}
+
+.sidebar-section{
+
+    margin-bottom:40px;
+
+}
+
+.sidebar-section h3{
+
+    margin-bottom:15px;
+
+    font-size:18px;
+
+}
+
+.sidebar-section a{
+
+    display:block;
+
+    padding:10px 0;
+
+    color:var(--text-light);
+
+}
+
+.sidebar-section a:hover{
+
+    color:var(--primary);
+
+}
+
+.content{
+
+    padding:40px;
+
+}
+
+.hero{
+
+    margin-bottom:35px;
+
+}
+
+.hero h1{
+
+    font-size:48px;
+
+    margin-bottom:15px;
+
+}
+
+.hero p{
+
+    max-width:700px;
+
+    margin-bottom:25px;
+
+    font-size:20px;
+
+}
+
+.dashboard{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+    margin-bottom:35px;
+
+}
+
+footer{
+
+    text-align:center;
+
+    padding:25px;
+
+    color:var(--text-light);
+
+    border-top:1px solid var(--border);
+
+    background:white;
+
+}
+
+}
