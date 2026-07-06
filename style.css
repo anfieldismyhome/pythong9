@@ -154,3 +154,132 @@ nav{width:100%;justify-content:flex-start;flex-wrap:wrap}
 .stats{grid-template-columns:repeat(2,1fr)}
 .reference-grid{grid-template-columns:repeat(2,1fr)}
 }
+/* ==========================================================
+LESSON COMPONENTS
+========================================================== */
+
+.lesson-container{
+display:grid;
+grid-template-columns:260px 1fr;
+gap:40px;
+align-items:start;
+}
+
+.lesson-nav{
+position:sticky;
+top:110px;
+background:var(--surface);
+border:1px solid var(--border);
+border-radius:var(--radius);
+padding:20px;
+box-shadow:var(--shadow);
+}
+
+.lesson-nav h3{
+margin-bottom:15px;
+}
+
+.lesson-nav a{
+display:block;
+padding:10px 12px;
+margin-bottom:6px;
+border-radius:8px;
+color:var(--text-light);
+}
+
+.lesson-nav a:hover{
+background:#EDF4FF;
+color:var(--primary);
+}
+
+.lesson-content{
+display:flex;
+flex-direction:column;
+gap:30px;
+}
+
+.lesson-header{
+padding:35px;
+background:var(--surface);
+border:1px solid var(--border);
+border-radius:var(--radius);
+box-shadow:var(--shadow);
+}
+
+.lesson-header h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.lesson-meta{
+display:flex;
+gap:12px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.lesson-tag{
+background:#EDF4FF;
+color:var(--primary);
+padding:8px 14px;
+border-radius:999px;
+font-size:14px;
+font-weight:600;
+}
+
+.objective-list{
+display:grid;
+gap:12px;
+}
+
+.objective{
+display:flex;
+align-items:flex-start;
+gap:12px;
+padding:14px;
+background:#FAFBFC;
+border:1px solid var(--border);
+border-radius:10px;
+}
+
+.example-card,
+.practice-card,
+.summary-card,
+.exit-ticket{
+background:var(--surface);
+border:1px solid var(--border);
+border-radius:var(--radius);
+padding:25px;
+box-shadow:var(--shadow);
+}
+
+.example-card h2,
+.practice-card h2,
+.summary-card h2,
+.exit-ticket h2{
+margin-bottom:15px;
+}
+
+.lesson-navigation{
+display:flex;
+justify-content:space-between;
+margin-top:20px;
+}
+
+.lesson-navigation .btn{
+min-width:180px;
+}
+
+@media(max-width:1000px){
+
+.lesson-container{
+grid-template-columns:1fr;
+}
+
+.lesson-nav{
+position:relative;
+top:auto;
+}
+
+}
+
